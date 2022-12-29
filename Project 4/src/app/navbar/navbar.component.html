@@ -1,0 +1,18 @@
+<div class="navbar unselectable">
+  <div class="tab-block">
+    <div class="tab" [routerLink]="['/']">
+      <div class="home">Home</div>
+    </div>
+  </div>
+  <div class="tab-block">
+    <div class="tab" *ngIf="!session" [routerLink]="['/signup']">
+      <div class="signup">Sign Up</div>
+    </div>
+    <div class="tab" *ngIf="session" [routerLink]="['/']">
+      <div class="login" (click)="logout()">Log Out</div>
+    </div>
+    <div class="tab" [routerLink]="['/contact']">
+      <div class="contact">Contact</div>
+    </div>
+  </div>
+</div>

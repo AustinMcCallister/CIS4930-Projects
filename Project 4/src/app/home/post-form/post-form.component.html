@@ -1,0 +1,17 @@
+<form [formGroup]="postForm">
+  <div class="form-module">
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" formControlName="title" required>
+  </div>
+  <div class="form-module">
+    <label for="header-image">Header Image:</label>
+    <input type="text" id="header-image" name="header-image" formControlName="headerImage">
+  </div>
+  <div class="form-module">
+    <label for="content">Content:</label>
+    <textarea type="text" id="content" name="content" formControlName="content" required></textarea>
+  </div>
+</form>
+<button class="login-button" (click)="post()">
+  New Post
+</button>

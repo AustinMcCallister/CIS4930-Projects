@@ -1,0 +1,29 @@
+<div class="signup">
+  <div class="signup-form">
+    <form [formGroup]="registrationForm">
+      <div class="form-module">
+        <label for="username">Username: <abbr title="required" aria-label="required">*</abbr></label>
+        <input type="text" id="username" name="username" formControlName="userName" placeholder="" required>
+      </div>
+      <div class="form-module">
+        <label for="firstname">First Name: <abbr title="required" aria-label="required">*</abbr></label>
+        <input type="text" id="firstname" name="firstname" formControlName="firstName" placeholder="" required>
+      </div>
+      <div class="form-module">
+        <label for="lastname">Last Name: <abbr title="required" aria-label="required">*</abbr></label>
+        <input type="text" id="lastname" name="lastname" formControlName="lastName" placeholder="" required>
+      </div>
+      <div class="form-module">
+        <label for="email">Email Address: <abbr title="required" aria-label="required">*</abbr></label>
+        <input type="email" id="email" name="email" formControlName="email" placeholder="" required>
+      </div>
+      <div class="form-module">
+        <label for="password">Password: <abbr title="required" aria-label="required">*</abbr></label>
+        <input type="password" id="password" name="password" formControlName="password" placeholder="" required>
+      </div>
+    </form>
+    <button class="signup-button" (click)="createUser()">
+      Sign Up
+    </button>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+.form-module {
+  display: flex;
+  flex-flow: column;
+  padding-bottom: 1em;
+  gap: .5em;
+
+  label {
+    color: #E5E9F0;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  input {
+    color: #2E3440;
+    background-color: #ECEFF4;
+    border: 2px solid #ECEFF4;
+    border-radius: .25em;
+    padding: .25em;
+
+    &:focus,
+    &:hover:not(:focus) {
+      border: 2px solid #5E81AC;
+    }
+  }
+}
+
+button {
+  color: #E5E9F0;
+  background-color: #5E81AC;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 0 solid;
+  border-radius: .25em;
+  width: max-content;
+  padding: .5em 2em;
+  transition: background-color .2s;
+
+  &:hover {
+    background-color: rgba(94, 129, 172, 0.86);
+    cursor: pointer;
+
+    &:active {
+      background-color: #5E81AC;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<form [formGroup]="loginForm">
+  <div class="form-module">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" formControlName="userName" required>
+  </div>
+  <div class="form-module">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" formControlName="password" required>
+  </div>
+</form>
+<button class="login-button" (click)="login()">
+  Login
+</button>

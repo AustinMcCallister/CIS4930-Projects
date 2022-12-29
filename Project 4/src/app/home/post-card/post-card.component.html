@@ -1,0 +1,40 @@
+<div class="post-card" *ngIf="!editing">
+  <div class="title-module">
+    <div class="post-title">
+      {{post?.title}}
+    </div>
+    <img src="{{post?.headerImage}}" alt=" ">
+  </div>
+  <div class="post-buttons" *ngIf="post?.userId === sessionUser">
+    <button class="edit-button" (click)="editToggle()">Edit</button>
+    <button class="delete-button" (click)="delete()">Delete</button>
+  </div>
+  <div class="post-user">
+    <label>Posted by:</label>
+    {{post?.userId}}
+  </div>
+  <div class="post-date">
+    {{post?.createdDate}}
+  </div>
+  <div class="post-content">
+    {{post?.content}}
+  </div>
+</div>
+<div class="post-edit" *ngIf="editing" [formGroup]="editForm">
+  <div class="edit-module">
+    <label>Title:</label>
+    <input type="text" class="post-title" formControlName="title" required>
+  </div>
+  <div class="edit-module">
+    <label>Header Image URL:</label>
+    <input type="text" formControlName="headerImage" class="post-header">
+  </div>
+  <div class="edit-module">
+    <label>Content:</label>
+    <textarea class="post-content" formControlName="content" required></textarea>
+  </div>
+  <div class="edit-buttons">
+    <button class="submit-button" (click)="submitEdit()">Submit</button>
+    <button class="cancel-button" (click)="editToggle()">Cancel</button>
+  </div>
+</div>

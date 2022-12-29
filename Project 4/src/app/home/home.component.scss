@@ -1,0 +1,53 @@
+.home {
+  display: grid;
+  grid-template: 1fr auto / 1fr;
+  justify-items: center;
+  width: 100%;
+
+  .header {
+    color: #E5E9F0;
+    background-color: #3B4252;
+    box-shadow: 0 0 20px -5px #2E3440;
+    width: 100%;
+    height: max-content;
+
+    .container {
+      display: grid;
+      grid-template: 1fr / 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      height: 100%;
+      padding: 2em;
+      gap: 2em;
+
+      .eye-catch {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        padding: 0 3em 1.5em;
+        gap: 1em;
+
+        .text-header {
+          font-size: 3em;
+        }
+      }
+
+      .login-form,
+      .post-form {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding: 1em 0;
+        gap: 1em;
+      }
+    }
+  }
+
+  .posts {
+    display: grid;
+    grid-template: auto / 1fr;
+    width: 60%;
+    padding: 2em;
+    gap: 2em;
+  }
+}

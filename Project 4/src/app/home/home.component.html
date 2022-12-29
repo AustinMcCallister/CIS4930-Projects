@@ -1,0 +1,27 @@
+<div class="home">
+  <div class="header">
+    <div class="container">
+      <div class="eye-catch">
+        <div class="text-header">Amazing Blog Header</div>
+        <div class="text-body">
+          An interesting description explaining why we're the best.
+          <br><br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Porttitor massa id neque aliquam
+          vestibulum morbi blandit cursus. Aliquet eget sit amet tellus cras. Suspendisse
+          sed nisi lacus sed viverra tellus in hac. Tellus at urna condimentum mattis
+          pellentesque id nibh. Turpis egestas pretium aenean pharetra magna ac placerat
+          vestibulum. Varius duis at consectetur lorem donec massa sapien. Adipiscing
+          tristique risus nec feugiat in fermentum posuere urna nec. Varius sit amet
+          mattis vulputate enim nulla aliquet porttitor lacus. Venenatis cras sed felis
+          eget. Mi bibendum neque egestas congue quisque egestas diam in arcu.
+        </div>
+      </div>
+      <app-login class="login-form" *ngIf="!session"></app-login>
+      <app-post-form class="post-form" *ngIf="session"></app-post-form>
+    </div>
+  </div>
+  <div class="posts">
+    <app-post-card *ngFor="let post of postArray" [post]="post" [index]="postArray.indexOf(post)"></app-post-card>
+  </div>
+</div>
