@@ -1,0 +1,94 @@
+.container {
+  display: grid;
+  grid-template: repeat(5, max-content) / 1fr;
+  height: max-content;
+  padding: 1em;
+  gap: 1em;
+  .legend {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    color: #2E3440;
+    background-color: #D8DEE9;
+    font-weight: bold;
+    border: 0 solid;
+    border-radius: 1em;
+    padding: 1em;
+    gap: 1em;
+    .legend-header {
+      font-size: 2em;
+      text-align: center;
+    }
+    .legend-module {
+      display: flex;
+      flex-direction: column;
+      background-color: #E5E9F0;
+      border: 0 solid;
+      border-radius: .25em;
+      padding: .25em;
+      gap: .25em;
+    }
+  }
+  .module {
+    display: grid;
+    grid-template: auto / repeat(2, 1fr);
+    background-color: #D8DEE9;
+    border: 0 solid;
+    border-radius: 1em;
+    padding: 1em;
+    gap: 1em;
+    .module-form {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      .module-form-header {
+        color: #2E3440;
+        font-size: 2em;
+        font-weight: bold;
+      }
+      .module-input {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        label {
+          display: flex;
+          flex-direction: column;
+          color: #2E3440;
+          font-size: 1.5em;
+          font-weight: bold;
+        }
+        input {
+          color: #2E3440;
+          background-color: #ECEFF4;
+          font-size: .75em;
+          border: 2px solid #ECEFF4;
+          border-radius: .5em;
+          padding: .25em;
+          &:focus {
+            border-color: #81A1C1;
+          }
+        }
+      }
+      button {
+        color: #ECEFF4;
+        background-color: #5E81AC;
+        font-size: 1.5em;
+        font-weight: bold;
+        border: 0 solid;
+        border-radius: .5em;
+        width: max-content;
+        padding: .4em .8em;
+        &:hover:not(:active) {
+          background-color: #81A1C1;
+        }
+      }
+    }
+    .module-response {
+      color: #2E3440;
+      background-color: #ECEFF4;
+      border: 0 solid;
+      border-radius: .5em;
+      padding: 1em;
+    }
+  }
+}

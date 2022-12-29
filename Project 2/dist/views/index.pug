@@ -1,0 +1,86 @@
+extends layout
+
+block content
+  head
+    link(rel='stylesheet', href='/stylesheets/index.css')
+    script(src='/scripts/index.js' defer)
+  .container
+    .legend
+      .legend-header
+        | Legend
+      .legend-module
+        | GET ・ /users/
+        div
+          | Returns an array of all user objects
+      .legend-module
+        | POST ・ /users/
+        div
+          | Creates a new user object
+        div
+          | Example: {"userId":"string","firstName":"string","lastName":"string","emailAddress":"string","password":"string"}
+      .legend-module
+        | GET ・ /users/{userId}
+        div
+          | Returns the user object matching the supplied userId
+      .legend-module
+        | PATCH ・ /users/{userId}
+        div
+          | Updates the user object matching the supplied userId
+        div
+          | Example: {"userId":"string","firstName":"string","lastName":"string","emailAddress":"string","password":"string"}
+      .legend-module
+        | DELETE ・ /users/{userId}
+        div
+          | Deletes the user object matching the supplied userId
+    .module.GET
+      .module-form
+        .module-form-header
+          | Find a User
+        .module-input
+          label User ID
+            input.user-id
+          button Find User
+      .module-response
+    .module.POST
+      .module-form
+        .module-form-header
+          | Create a User
+        .module-input
+          label User ID
+            input.user-id
+          label First Name
+            input.first-name
+          label Last Name
+            input.last-name
+          label Email Address
+            input.email-address
+          label Password
+            input.password
+          button Create User
+      .module-response
+    .module.PATCH
+      .module-form
+        .module-form-header
+          | Update a User
+        .module-input
+          label User ID
+            input.user-id
+          label First Name
+            input.first-name
+          label Last Name
+            input.last-name
+          label Email Address
+            input.email-address
+          label Password
+            input.password
+          button Update User
+      .module-response
+    .module.DELETE
+      .module-form
+        .module-form-header
+          | Delete a User
+        .module-input
+          label User ID
+            input.user-id
+          button Delete User
+      .module-response
