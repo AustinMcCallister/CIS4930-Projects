@@ -1,0 +1,96 @@
+.container {
+  display: grid;
+  grid-template: repeat(5, max-content)/1fr;
+  height: max-content;
+  padding: 1em;
+  gap: 1em;
+}
+.container .legend {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/-1;
+  color: #2E3440;
+  background-color: #D8DEE9;
+  font-weight: bold;
+  border: 0 solid;
+  border-radius: 1em;
+  padding: 1em;
+  gap: 1em;
+}
+.container .legend .legend-header {
+  font-size: 2em;
+  text-align: center;
+}
+.container .legend .legend-module {
+  display: flex;
+  flex-direction: column;
+  background-color: #E5E9F0;
+  border: 0 solid;
+  border-radius: 0.25em;
+  padding: 0.25em;
+  gap: 0.25em;
+}
+.container .module {
+  display: grid;
+  grid-template: auto/repeat(2, 1fr);
+  background-color: #D8DEE9;
+  border: 0 solid;
+  border-radius: 1em;
+  padding: 1em;
+  gap: 1em;
+}
+.container .module .module-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.container .module .module-form .module-form-header {
+  color: #2E3440;
+  font-size: 2em;
+  font-weight: bold;
+}
+.container .module .module-form .module-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.container .module .module-form .module-input label {
+  display: flex;
+  flex-direction: column;
+  color: #2E3440;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.container .module .module-form .module-input input {
+  color: #2E3440;
+  background-color: #ECEFF4;
+  font-size: 0.75em;
+  border: 2px solid #ECEFF4;
+  border-radius: 0.5em;
+  padding: 0.25em;
+}
+.container .module .module-form .module-input input:focus {
+  border-color: #81A1C1;
+}
+.container .module .module-form button {
+  color: #ECEFF4;
+  background-color: #5E81AC;
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 0 solid;
+  border-radius: 0.5em;
+  width: max-content;
+  padding: 0.4em 0.8em;
+}
+.container .module .module-form button:hover:not(:active) {
+  background-color: #81A1C1;
+}
+.container .module .module-response {
+  color: #2E3440;
+  background-color: #ECEFF4;
+  border: 0 solid;
+  border-radius: 0.5em;
+  padding: 1em;
+}
+
+/*# sourceMappingURL=index.css.map */

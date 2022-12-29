@@ -1,0 +1,18 @@
+* {
+  font-family: "Noto Sans", "Avenir", "Sabon", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:focus {
+  outline: none;
+}
+
+html,
+body {
+  background-color: #ECEFF4;
+  width: 100%;
+  height: max-content;
+}
+
+/*# sourceMappingURL=layout.css.map */
