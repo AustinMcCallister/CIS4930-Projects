@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Page</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+  <div id="content">
+    <div class="navbar unselectable">
+      <div class="tab-block">
+        <div class="tab selected">
+          <div class="home selected">Home</div>
+        </div>
+        <div class="tab">
+          <div class="menu">Search</div>
+        </div>
+      </div>
+      <div class="tab-block">
+        <div class="tab">
+          <div class="contact">Contact</div>
+        </div>
+      </div>
+    </div>
+    <div class="body">
+      <div class="header">
+        <div class="image-container">
+          <img src="./img/shovel.jpg" alt="A picture of a shovel">
+          <div class="image-header-container">
+            <div class="image-header">
+              A Shovel
+            </div>
+            <div class="image-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+              et dolore magna aliqua. Nec feugiat nisl pretium fusce id velit ut. Sed viverra ipsum nunc aliquet
+              bibendum enim facilisis. Quisque non tellus orci ac. Eget dolor morbi non arcu risus. Natoque
+              penatibus et magnis dis parturient montes nascetur ridiculus mus. Nunc sed velit dignissim sodales
+              ut eu sem. Accumsan tortor posuere ac ut consequat semper.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="review-section">
+        <div class="customer-reviews">
+          <div class="reviews-header">
+            Customer Reviews
+          </div>
+        </div>
+        <div class="review-form">
+          <div class="form-module">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-module">
+            <label for="comment">Comment:</label>
+            <textarea id="comment"></textarea>
+          </div>
+          <div class="form-module">
+            <label>Rating:</label>
+            <div class="rating-stars-container">
+              <div class="rating-stars">
+                <div id="1" class="star">
+                  <svg viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+                  </svg>
+                </div>
+                <div id="2" class="star">
+                  <svg viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" />
+                  </svg>
+                </div>
+                <div id="3" class="star">
+                  <svg viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" />
+                  </svg>
+                </div>
+                <div id="4" class="star">
+                  <svg viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" />
+                  </svg>
+                </div>
+                <div id="5" class="star">
+                  <svg viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <button class="submit-review unselectable">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer unselectable">
+      Copyright © Austin McCallister 2022
+    </div>
+  </div>
+</body>
+</html>
